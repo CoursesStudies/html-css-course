@@ -110,6 +110,21 @@ h2:after {
     margin-bottom: 10px; 
 }   
 
+
+.icon-small{
+    color: #e67e22;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /* Align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
 /* --------------- BUTTONS ------------------------ */
 
 .btn:link,
@@ -153,6 +168,22 @@ h2:after {
 }
 
 
+/* --------------- GENERIC LINKS ------------------------ */
+
+a:link,
+a:active {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.5s;
+}
+
+a:hover,
+a:visited {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
 /*------------------------------------- -----
 HEADER SECTION
 ----------------------------------------------*/
@@ -161,6 +192,7 @@ header {
     background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url('../img/hero.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -299,8 +331,71 @@ HOW-IT-WORKS SECTION
     margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-full:visited {
+    border: 0;
+}
+
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/*--------------------------------------- 
+CITIES SECTION
+-----------------------------------------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+/*--------------------------------------- 
+TESTIMONIALS SECTION
+-----------------------------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0,0,0,0.8)), url('../img/back-customers.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
+    color: white;
+
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
